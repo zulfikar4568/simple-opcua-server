@@ -77,6 +77,7 @@ function constructAddressSpace(addressSpace: AddressSpace) {
   try {
     const server = new OPCUAServer({
       port: 26543,
+      hostname: 'localhost',
       buildInfo: {
         productName: 'Sample of OPCUA Server',
         buildNumber: '123',
